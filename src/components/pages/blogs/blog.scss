@@ -1,0 +1,35 @@
+.blog-spot-form {    
+    padding: 10px;
+    input, textarea {
+        margin:10px;        
+    }
+
+    button{
+        justify-content: center;
+        display: flex;
+        min-width: 150px;
+        margin: 0 auto;
+    }
+    
+}
+
+.navBar {
+    a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .card {
+        padding: 10px;
+        margin: 10px;
+        width:20%;
+    }
+}
