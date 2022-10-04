@@ -26,7 +26,7 @@ function Blogs() {
                     return(    
                         <React.Fragment key={index}>       
                         <div className="card" >
-                            <img className="card-img-top" src={element.blogimage} alt="Card image cap" />
+                            <img className="card-img-top" src={element.blogimage} alt={element.blogtitle} />
                             <div className="card-body">
                                 <h5 className="card-title">{element.blogtitle}</h5>
                                 <p className="card-text">{element.blogdesc}</p>

@@ -12,7 +12,7 @@ function Newslist() {
     }])   
 
     useEffect(()=> {        
-        const uri = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=a12fe2b2731340be93b7e3c2ecad4d5d";
+        const uri = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=a12fe2b2731340be93b7e3c2ecad4d5d`;
         
         const getAriticles = async() => {
             const response = await axios.get(uri)
