@@ -21,8 +21,7 @@ function AddBlogspot(){
     }
 
     const handleSubmit = (event)=> {
-        event.preventDefault();
-        console.log(input)
+        event.preventDefault();        
         const newBlog = {
             blogtitle: input.blogtitle, 
             blogdesc: input.blogdesc,
@@ -30,7 +29,6 @@ function AddBlogspot(){
             bloglink: input.bloglink
         }
         axios.post('http://localhost:3001/createBlog', newBlog)
-        
     }
 
     return(

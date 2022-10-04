@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import AddBlogspot from "./components/pages/blogs/AddBlogspot";
 import Navbar from './components/pages/Navbar';
 import Blogs from './components/pages/blogs/Blogs';
+import Newslist from './components/pages/news/Newslist';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Navbar />} />
           <Route path="/createBlog" element={<AddBlogspot />} /> 
-          <Route path="/blogs" element={<Blogs />}  />        
+          <Route path="/blogs" element={<Blogs />}  />
+          <Route path="/news" element={<Newslist />} />      
         </Routes>
       </Router>     
        

@@ -1,3 +1,11 @@
+@mixin clamptext($num) {
+    -webkit-line-clamp: $num;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
 .blog-spot-form {    
     padding: 10px;
     input, textarea {
@@ -25,11 +33,22 @@
 .cards-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
 
     .card {
         padding: 10px;
         margin: 10px;
         width:20%;
+        .card-img-top {
+            object-fit: cover;
+            height:120px;
+        }
+        .card-title {
+            @include clamptext(2)
+        }
+        .card-text {
+            @include clamptext(3)
+        }
     }
 }
