@@ -42,7 +42,7 @@
         width:20%;
         .card-img-top {
             object-fit: cover;
-            height:120px;
+            height:100%;
         }
         .card-title {
             @include clamptext(2)
@@ -51,4 +51,8 @@
             @include clamptext(3)
         }
     }
+}
+
+option, .form-select {
+    text-transform: capitalize;
 }
