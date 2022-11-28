@@ -5,6 +5,7 @@ const mongoose = require('mongoose')
 
 //connect to mongoDB
 mongoose.connect("mongodb+srv://admin:admin123@booking.z4qlhsy.mongodb.net/Blogspots")
+
 const PORT = 3001
 
 app.use(cors());

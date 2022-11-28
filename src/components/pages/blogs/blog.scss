@@ -38,8 +38,8 @@
 
     .card {
         padding: 10px;
-        margin: 10px;
-        width:20%;
+        margin: 5px;
+        width:25%;
         .card-img-top {
             object-fit: cover;
             height:100%;
@@ -50,9 +50,39 @@
         .card-text {
             @include clamptext(3)
         }
+        .delete-btn {
+            float:right;
+        }
     }
 }
 
 option, .form-select {
     text-transform: capitalize;
+}
+
+footer, header {
+    right: 0;
+    left: 0;
+    z-index: 2;
+    
+}
+
+header {
+    background: teal;
+    top:0;
+    padding: 10px;
+    position: sticky;    
+}
+
+footer {
+    bottom:0;
+}
+
+.navBar a {
+    color:#fff;
+    font-weight: 600;
+}
+
+.container.body {
+    min-height: 489px;
 }

@@ -41,7 +41,7 @@ function Newslist() {
             <div className='row'>
                 <div className='sort col-md-3'>
                     <select id="languages" onChange={handleLanguageChange} className="form-select" aria-label="Default select example">
-                        {languages.map((item, i) => (
+                        {languages?.map((item, i) => (
                             <option value={item} key={i}>
                                 {item}
                             </option>
@@ -50,7 +50,7 @@ function Newslist() {
                 </div>
                 <div className='sort col-md-3'>
                     <select id="categories" onChange={handleCategoryChange} className="form-select" aria-label="Default select example">
-                        {categories.map((item, i) => (
+                        {categories?.map((item, i) => (
                             <option value={item} key={i}>
                                 {item}
                             </option>
@@ -60,10 +60,9 @@ function Newslist() {
             </div>
             <div className='cards-container'>
             {             
-                newsdata.map((news, index) => {     
+                newsdata?.map((news, index) => {     
                     return(   
-                        <>
-                        
+                        <>                        
                         <Newsitem
                             title={news.title}
                             description = {news.description}

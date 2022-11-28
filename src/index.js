@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../src/custom.scss';
 import App from './App';
+import { Provider } from 'react-redux';
+import store from './store/reducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <App />  
+  <Provider store={store}>
+    <App />
+  </Provider>
 );
 
