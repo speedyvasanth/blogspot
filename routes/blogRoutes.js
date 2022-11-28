@@ -15,6 +15,7 @@ router.route("/createBlog").post((req, res) =>{
         blogimage,
         bloglink
     })
+    
     NewBlog.save()
 })
 
